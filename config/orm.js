@@ -2,12 +2,12 @@
 var connection = require("../config/connection.js");
 
 // connect to db
-connection.connect(function(err) {
-  if(err) {
-    console.log("Error", err.stack);
-  }
-  console.log("Connected as id: %s", connection.threadId)
-});
+// connection.connect(function(err) {
+//   if(err) {
+//     console.log("Error", err.stack);
+//   }
+//   console.log("Connected as id: %s", connection.threadId)
+// });
 
 // create the orm object to perform SQL queries
 var orm = {

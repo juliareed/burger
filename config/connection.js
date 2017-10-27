@@ -1,4 +1,4 @@
-// required dependency
+// require dependency
 var mysql = require('mysql');
 
 // create the MySQL connection object
@@ -8,8 +8,7 @@ var connection = mysql.createConnection({
 		user: 'root',
 		password: '',
 		database: 'burgers_db'
-	})
-};
+	});
 
 // make the connection to MySQL
 connection.connect(function(err) {
